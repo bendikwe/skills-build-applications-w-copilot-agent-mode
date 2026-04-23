@@ -38,6 +38,9 @@ SECRET_KEY = 'django-insecure-oev!ihpk^%zn8w+uk75dd_6f2c!9394n(#uo3mqmladh_i41ml
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+codespace_name = os.environ.get('CODESPACE_NAME')
+if codespace_name:
+    base_url = f"https://{codespace_name}-8000.app.github.dev"
 
 
 # Application definition
