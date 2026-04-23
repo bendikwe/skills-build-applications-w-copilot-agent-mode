@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Activities = () => {
   const [activities, setActivities] = useState([]);
   const baseUrl = process.env.REACT_APP_CODESPACE_NAME
-    ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev`
+    ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api/activities/`
     : 'http://localhost:8000';
   const endpoint = `${baseUrl}/api/activities/`;
 
